@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>fluffy_alert</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="add_icon.ico" />
+    <None Remove="minus_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="add_icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="minus_icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.Support" Version="4.10.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.10.0" />
+    <PackageReference Include="System.Management" Version="7.0.2" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="7.0.1" />
+    <PackageReference Include="TaskScheduler" Version="2.10.1" />
+    <PackageReference Include="Vanara.PInvoke.IpHlpApi" Version="3.4.15" />
+    <PackageReference Include="Vanara.PInvoke.NetApi32" Version="3.4.15" />
+    <PackageReference Include="Vanara.PInvoke.Ws2_32" Version="3.4.15" />
+    <PackageReference Include="Vanara.Windows.Extensions" Version="3.4.15" />
+  </ItemGroup>
+
+</Project>
